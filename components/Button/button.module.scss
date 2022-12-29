@@ -1,0 +1,25 @@
+@use '../../styles/mixins' as *;
+
+.button {
+  color: #684bb1;
+  font-weight: 400;
+  background-color: white;
+  padding: 12px 70px;
+  border-radius: 30px;
+  line-height: 18px;
+  box-shadow: 0 3px 8px 0 rgba(black, 0.3);
+  transition: 0.1s ease-in-out;
+  margin-bottom: 4rem;
+  max-width: 200px;
+
+  &:hover {
+    color: white;
+    background-color: #e882e8;
+  }
+
+  @include from(10) {
+    font-size: 1.125rem;
+    line-height: 27px;
+    padding: 13px 64px;
+  }
+}

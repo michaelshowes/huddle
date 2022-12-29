@@ -1,0 +1,17 @@
+@use '../../styles/mixins' as *;
+
+.pageContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 38px 40px;
+
+  @include from(10) {
+    padding: 64px 80px;
+  }
+
+  .inner {
+    margin: 0 auto;
+    max-width: 1240px;
+  }
+}

@@ -1,0 +1,11 @@
+@use '../../styles/mixins' as *;
+
+.header {
+  .logo {
+    width: 120px;
+
+    @include from(10) {
+      width: 200px;
+    }
+  }
+}
